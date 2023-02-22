@@ -1,7 +1,5 @@
 # Packaging an app, starting from this example
 
-* Copy this app before working on it, using the ['Use this template'](https://github.com/YunoHost/example_ynh/generate) button on the Github repo.
-* Edit the `manifest.json` with app specific info.
 * Edit the `install`, `upgrade`, `remove`, `backup` and `restore` scripts, and any relevant conf files in `conf/`.
   * Using the [script helpers documentation.](https://yunohost.org/packaging_apps_helpers)
 * Edit the `change_url` and `config` scripts too, or remove them if you have no use of them
@@ -17,7 +15,7 @@ It shall NOT be edited by hand.
 
 # Example app for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Working status](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/example.svg)](https://dash.yunohost.org/appci/app/example) ![Working status](https://ci-apps.yunohost.org/ci/badges/example.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/example.maintain.svg)
 [![Install Example app with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=example)
 
 *[Lire ce readme en français.](./README_fr.md)*

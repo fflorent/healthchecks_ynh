@@ -1,7 +1,6 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://api.github.com/repos/healthchecks/healthchecks/tarball/v2.6.1
+SOURCE_SUM=c108d9ca3b40749e881404b4982bf545f8ff8232da783fc7ba1baf76e83c91c6
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=1
 SOURCE_IN_SUBDIR=true
 SOURCE_FILENAME=
-SOURCE_EXTRACT=true
