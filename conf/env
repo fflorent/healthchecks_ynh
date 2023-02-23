@@ -1,0 +1,7 @@
+ADMINS=__ADMIN_MAIL__
+DB=mysql
+DB_HOST=localhost
+DB_NAME=__APP__
+DB_USER=__APP__
+DB_PASSWORD=__DB_PWD__
+DB_PORT=5432

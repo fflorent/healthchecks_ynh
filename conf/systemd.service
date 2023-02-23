@@ -1,13 +1,16 @@
 [Unit]
-Description=Small description of the service
-After=network.target
+Description=A cron monitoring tool written in Python & Django
+After=network.target postgresql.service
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
+EnvironmentFile=__DATADIR__/hc-venv/bin/activate
+EnvironmentFile=__INSTALL_DIR__/.env
+EnvironmentFile=__DATADIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+ExecStart=__INSTALL_DIR__/manage.py runserver 127.0.0.1:__PORT__
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 

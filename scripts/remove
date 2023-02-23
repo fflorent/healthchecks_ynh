@@ -25,7 +25,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 # REMOVE SYSTEM CONFIGURATIONS
 #=================================================
-# REMOVE SYSTEMD SERVICE 
+# REMOVE SYSTEMD SERVICE
 #=================================================
 
 ynh_script_progression --message="Removing system configurations related to $app..." --weight=1
@@ -43,19 +43,9 @@ ynh_remove_systemd_config
 
 ynh_remove_nginx_config
 
-ynh_remove_fpm_config
-
 ynh_remove_logrotate
 
 ynh_remove_fail2ban_config
-
-# Remove other various files specific to the app... such as :
-
-ynh_secure_remove --file="/etc/cron.d/$app"
-
-ynh_secure_remove --file="/etc/$app"
-
-ynh_secure_remove --file="/var/log/$app"
 
 #=================================================
 # END OF SCRIPT
